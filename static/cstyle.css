@@ -1,0 +1,21 @@
+
+
+h1{
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 400;
+
+}
+
+.intro{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+form{
+    width: 600px;
+    box-sizing:content-box;
+    border: 1px solid gray;
+    padding: 18px;
+    margin: auto;
+}

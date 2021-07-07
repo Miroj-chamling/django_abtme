@@ -1,0 +1,119 @@
+.container-fluid{
+    position: fixed;
+}
+nav{
+    position: absolute;
+    bottom: 24rem;
+    left: -250px;
+    display: flex;
+    padding: 2% 5%;
+    align-items: center;
+    line-height: 2rem;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+    padding: 8px 12px;
+    position: relative;
+} 
+.nav-links ul li a{
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+.nav-links ul li a:hover{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.main{
+    padding: 8px;
+}
+
+.about{
+    margin: auto;
+    width: 1000px;
+    margin-top: 10px;
+}
+.cards{
+    margin:auto;
+    width: 1200px;
+    height: max-content;
+    margin-top: 5rem;
+}
+.frns{
+    margin-top: 7rem;
+    margin: auto;
+    width: 1000px;
+}
+
+.footer{
+    width: max-content;
+    margin: auto;
+}
+
+.footer .button{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;  
+    float: left;
+    background: grey;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    border: 0px;
+}
+.footer .button .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+
+}
+.footer .button .icon i{
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+}
+.footer .button span{
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 5px;
+    line-height: 50px;
+    color: black;
+    z-index: 1;
+}
+
+.footer .button:hover{
+    width: 140px;
+}
+
+.cards .card:hover{
+    box-shadow: 10px gray;
+
+}
+
