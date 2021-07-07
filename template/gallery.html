@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Gallery{% endblock title %}
+
+{% block body %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'gstyle.css' %}">
+
+
+<h1 style = "text-align: center; margin-top: 2rem;">Welcome to the Gallery</h1>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style = "display :flex; justify-content: space-between ">
+           <h4 style= "color: tomato">My Portfolio</h4>
+          <div class="barnav" id="barnav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/ "style=" font-size: 20px; " >Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about "style=" font-size: 20px; " >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery" style="font-size: 20px;">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size: 20px;">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact" style="font-size: 20px;">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+{% endblock body %}
+
+
+
+
+
+
+
+
+
+

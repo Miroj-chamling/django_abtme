@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}
+contact
+{% endblock title %}
+
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'cstyle.css' %}">
+
+<img src="/static/top.jpg" class="d-block w-100" alt="">
+<h1 style="text-align: center; margin-top: 1rem;">
+    CONTACT ME</h1>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark my-4" style="display :flex; justify-content: space-between ">
+    <h4 style="color: tomato">My Portfolio</h4>
+    <div class="barnav" id="barnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/ " style=" font-size: 20px; ">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about " style=" font-size: 20px; ">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gallery" style="font-size: 20px;">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size: 20px;">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size: 20px;">contact</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="maincontainer">
+    <div class="intro">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et quo fuga, modi incidunt libero unde magni
+        quas
+        molestias iste dolorem dolorum ut tempore adipisci consectetur nulla. Iure magni mollitia labore doloremque
+        natus
+        voluptas exercitationem reprehenderit quae, suscipit ea necessitatibus enim error laboriosam alias soluta
+        repellat
+        corrupti rerum ipsam repudiandae in voluptatem. Eaque, quo? Dolor asperiores ratione facilis dignissimos velit
+        architecto fugit, laudantium explicabo itaque quia, dolore animi dicta dolorum molestias ipsa atque odit
+        temporibus
+        dolorem? Eveniet in eius corporis optio assumenda. Tempore consequatur eaque possimus aspernatur laudantium ex
+        minus
+        vel architecto veniam sequi, perferendis iusto vero sunt aliquam necessitatibus.
+    </div>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="firstname">First name</label>
+              <input type="text" class="form-control" placeholder="First name" name="firstname" id="firstName">
+            </div>
+            <label for="lastname">Last name</label>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Last name" name="lastname" id="lastName">
+            </div>
+          </div>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="col-6">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" name="address" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" name="city" id="city">
+            </div>
+            <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <input type="text" class="form-control" name="state" id="state">
+              </div>
+            <div class="col-md-2">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" name="zip" id="zip">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Send me a message</label>
+                <textarea class="form-control" name="message" id="message" rows="7"></textarea>
+              </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+    </div>
+</form>
+
+{% endblock body %}
